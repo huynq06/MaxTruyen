@@ -1,0 +1,288 @@
+﻿@{
+    var url = "http://117.4.252.46:8080/extent";
+}
+
+<ul class="control nav navbar-nav">
+    <li class="dropdown">
+        <button type="button"
+                class="dropdown-toggle"
+                data-toggle="dropdown">
+            <span class="glyphicon glyphicon-list"></span> Danh sách
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li>
+                <a href=@url.Replace("extent","danh-sach/truyen-moi/index.html")
+                   title="Truyện mới cập nhật">Truyện mới cập nhật</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/truyen-hot/index.html") title="Truyện Hot">Truyện Hot</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/truyen-full/index.html") title="Truyện Full">Truyện Full</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/tien-hiep-hay/index.html")
+                   title="Tiên Hiệp Hay">Tiên Hiệp Hay</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/kiem-hiep-hay/index.html")
+                   title="Kiếm Hiệp Hay">Kiếm Hiệp Hay</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/truyen-teen-hay/index.html")
+                   title="Truyện Teen Hay">Truyện Teen Hay</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/ngon-tinh-hay/index.html")
+                   title="Ngôn Tình Hay">Ngôn Tình Hay</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/ngon-tinh-sac/index.html")
+                   title="Ngôn Tình Sắc">Ngôn Tình Sắc</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/ngon-tinh-nguoc/index.html")
+                   title="Ngôn Tình Ngược">Ngôn Tình Ngược</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/ngon-tinh-sung/index.html")
+                   title="Ngôn Tình Sủng">Ngôn Tình Sủng</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/ngon-tinh-hai/index.html")
+                   title="Ngôn Tình Hài">Ngôn Tình Hài</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/ngon-tinh-tong-tai/index.html")
+                   title="Ngôn Tình Tổng Tài">Ngôn Tình Tổng Tài</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/ngon-tinh-xuyen-khong/index.html")
+                   title="Ngôn Tình Xuyên Không">Ngôn Tình Xuyên Không</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/ngon-tinh-co-dai/index.html")
+                   title="Ngôn Tình Cổ Đại">Ngôn Tình Cổ Đại</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/ngon-tinh-trong-sinh/index.html")
+                   title="Ngôn Tình Trọng Sinh">Ngôn Tình Trọng Sinh</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/ngon-tinh-nu-phu/index.html")
+                   title="Ngôn Tình Nữ Phụ">Ngôn Tình Nữ Phụ</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/dam-my-hai/index.html") title="Đam Mỹ Hài">Đam Mỹ Hài</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/dam-my-hay/index.html") title="Đam Mỹ Hay">Đam Mỹ Hay</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/dam-my-h-van/index.html")
+                   title="Đam Mỹ H Văn">Đam Mỹ H Văn</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/dam-my-sac/index.html") title="Đam Mỹ Sắc">Đam Mỹ Sắc</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/dam-my-trong-sinh/index.html")
+                   title="Đam Mỹ Trọng Sinh">Đam Mỹ Trọng Sinh</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/dam-my-co-dai/index.html")
+                   title="Đam Mỹ Cổ Đại">Đam Mỹ Cổ Đại</a>
+            </li>
+            <li>
+                <a href=@url.Replace("extent","danh-sach/dam-my-hien-dai/index.html")
+                   title="Đam Mỹ Hiện Đại">Đam Mỹ Hiện Đại</a>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <button type="button"
+                class="dropdown-toggle"
+                data-toggle="dropdown">
+            <span class="glyphicon glyphicon-list"></span> Thể loại
+            <span class="caret"></span>
+        </button>
+        <div class="dropdown-menu multi-column">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/tien-hiep/index.html")
+                               title="Truyện Tiên Hiệp">Tiên Hiệp</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/kiem-hiep/index.html")
+                               title="Truyện Kiếm Hiệp">Kiếm Hiệp</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/ngon-tinh/index.html")
+                               title="Truyện Ngôn Tình">Ngôn Tình</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/do-thi/index.html")
+                               title="Truyện Đô Thị">Đô Thị</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/quan-truong/index.html")
+                               title="Truyện Quan Trường">Quan Trường</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/vong-du/index.html")
+                               title="Truyện Võng Du">Võng Du</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/khoa-huyen/index.html")
+                               title="Truyện Khoa Huyễn">Khoa Huyễn</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/he-thong/index.html")
+                               title="Truyện Hệ Thống">Hệ Thống</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/huyen-huyen/index.html")
+                               title="Truyện Huyền Huyễn">Huyền Huyễn</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/di-gioi/index.html")
+                               title="Truyện Dị Giới">Dị Giới</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/di-nang/index.html")
+                               title="Truyện Dị Năng">Dị Năng</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/quan-su/index.html")
+                               title="Truyện Quân Sự">Quân Sự</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/lich-su/index.html")
+                               title="Truyện Lịch Sử">Lịch Sử</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/xuyen-khong/index.html")
+                               title="Truyện Xuyên Không">Xuyên Không</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/xuyen-nhanh/index.html")
+                               title="Truyện Xuyên Nhanh">Xuyên Nhanh</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/trong-sinh/index.html")
+                               title="Truyện Trọng Sinh">Trọng Sinh</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/trinh-tham/index.html")
+                               title="Truyện Trinh Thám">Trinh Thám</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/tham-hiem/index.html")
+                               title="Truyện Thám Hiểm">Thám Hiểm</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/linh-di/index.html")
+                               title="Truyện Linh Dị">Linh Dị</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/sac/index.html") title="Truyện Sắc">Sắc</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/nguoc/index.html")
+                               title="Truyện Ngược">Ngược</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/sung/index.html") title="Truyện Sủng">Sủng</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/cung-dau/index.html")
+                               title="Truyện Cung Đấu">Cung Đấu</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/nu-cuong/index.html")
+                               title="Truyện Nữ Cường">Nữ Cường</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/gia-dau/index.html")
+                               title="Truyện Gia Đấu">Gia Đấu</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/dong-phuong/index.html")
+                               title="Truyện Đông Phương">Đông Phương</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/dam-my/index.html")
+                               title="Truyện Đam Mỹ">Đam Mỹ</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/bach-hop/index.html")
+                               title="Truyện Bách Hợp">Bách Hợp</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/hai-huoc/index.html")
+                               title="Truyện Hài Hước">Hài Hước</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/dien-van/index.html")
+                               title="Truyện Điền Văn">Điền Văn</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/co-dai/index.html")
+                               title="Truyện Cổ Đại">Cổ Đại</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/mat-the/index.html")
+                               title="Truyện Mạt Thế">Mạt Thế</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/truyen-teen/index.html")
+                               title="Truyện Truyện Teen">Truyện Teen</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/phuong-tay/index.html")
+                               title="Truyện Phương Tây">Phương Tây</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/nu-phu/index.html")
+                               title="Truyện Nữ Phụ">Nữ Phụ</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/light-novel/index.html")
+                               title="Truyện Light Novel">Light Novel</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/viet-nam/index.html")
+                               title="Truyện Việt Nam">Việt Nam</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/doan-van/index.html")
+                               title="Truyện Đoản Văn">Đoản Văn</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/tong-tai/index.html")
+                               title="Truyện Tổng Tài">Tổng Tài</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/my-thuc/index.html")
+                               title="Truyện Mỹ Thực">Mỹ Thực</a>
+                        </li>
+                        <li>
+                            <a href=@url.Replace("extent","the-loai/khac/index.html") title="Truyện Khác">Khác</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>

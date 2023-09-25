@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yeKxnSsndfMTMtMZFheh5Q0IWDO3D4VEU7DLanWcqsTD+g+9TklRx3ClLsD0PCnhcAdoKbIFn/NJlmswok7z2w==",
+  "success": true,
+  "projectFilePath": "E:\\.NET CORE\\MaxStory\\MaxStory.Application\\MaxStory.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\htmlagilitypack\\1.11.52\\htmlagilitypack.1.11.52.nupkg.sha512"
+  ],
+  "logs": []
+}

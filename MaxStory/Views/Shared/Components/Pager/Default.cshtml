@@ -1,0 +1,127 @@
+﻿@model MaxStory.Utilities.Dtos.PagedResultBase
+@{
+    var urlTemplate = Url.Action() + "?page={0}";
+    var request = ViewContext.HttpContext.Request;
+    foreach (var key in request.Query.Keys)
+    {
+        if (key == "page")
+        {
+            continue;
+        }
+
+        urlTemplate += "&" + key + "=" + request.Query[key];
+    }
+
+    var startIndex = Math.Max(Model.CurrentPage - 5, 1);
+    var finishIndex = Math.Min(Model.CurrentPage + 5, Model.PageCount);
+}
+<ul class="pagination">
+    @if(Model.PageCount < 7){
+        @if (Model.CurrentPage == 1)
+        {
+            @for (var i = startIndex; i <= finishIndex; i++)
+            {
+                if (i == Model.CurrentPage)
+                {
+                    <li class="active">
+                        <span>@i<span class="sr-only"> (đang xem)</span></span>
+                    </li>
+                }
+                else
+                {
+                    <li><a href="@urlTemplate.Replace("{0}", i.ToString())">@i</a></li>
+                }
+            }
+           
+        }
+        else if (Model.CurrentPage > 1)
+        {
+          
+            @for (var i = startIndex; i <= finishIndex; i++)
+            {
+
+                if (i == Model.CurrentPage)
+                {
+                    <li class="active">
+                        <span>@i<span class="sr-only"> (đang xem)</span></span>
+                    </li>
+                }
+                else
+                {
+                    <li><a href="@urlTemplate.Replace("{0}", i.ToString())">@i</a></li>
+                }
+            }
+          
+        }
+    }
+    else{
+         @if (Model.CurrentPage == 1)
+    {
+         @for (var i = startIndex; i <= finishIndex; i++)
+            {
+                if (i == Model.CurrentPage)
+                {
+                    <li class="active">
+                        <span>@i<span class="sr-only"> (đang xem)</span></span>
+                    </li>
+                }
+                else
+                {
+                    <li><a href="@urlTemplate.Replace("{0}", i.ToString())">@i</a></li>
+                }
+            }
+        <li><a href="@urlTemplate.Replace("{0}", (Model.CurrentPage + 1).ToString())"><i class="fa fa-angle-right">Tới</i></a></li>
+        <li><a href="@urlTemplate.Replace("{0}", Model.PageCount.ToString())"><i class="fa fa-angle-right">Cuối</i></a></li>
+    }
+    else if (Model.CurrentPage > 1)
+    {
+        <li><a href="@urlTemplate.Replace("{0}", "1")"><span class="arrow">«</span> Đầu</a></li>
+        <li><a href="@urlTemplate.Replace("{0}", (Model.CurrentPage - 1).ToString())"><span class="glyphicon glyphicon-menu-left"></span></a></li>
+        @for (var i = startIndex; i <= finishIndex; i++)
+        {
+          
+            if (i == Model.CurrentPage)
+            {
+                <li class="active">
+                    <span>@i<span class="sr-only"> (đang xem)</span></span>
+                </li>
+            }
+            else
+            {
+                <li><a href="@urlTemplate.Replace("{0}", i.ToString())">@i</a></li>
+            }
+        }
+        <li><a href="@urlTemplate.Replace("{0}", (Model.CurrentPage + 1).ToString())"><span class="glyphicon glyphicon-menu-right"></span></a></li>
+        <li><a href="@urlTemplate.Replace("{0}", Model.PageCount.ToString())">Cuối <span class="arrow">»</span></a></li>
+    }
+    <li class="dropup page-nav">
+        <span data-toggle="dropdown">
+            Chọn trang <span class="caret"></span>
+        </span>
+        <div class="dropdown-menu dropdown-menu-right" role="menu">
+            <form action="https://localhost:7021/chien-than-thanh-y-huyen-thoai-thanh-y-s.3.html"
+                  name="page_jump"
+                  id="page_jump"
+                  method="get">
+                <div class="input-group">
+                    <input name="page_type" type="hidden" value="" />
+                    <input name="truyen"
+                         type="hidden"
+                         value="chien-than-thanh-y-huyen-thoai-thanh-y" />
+                         <input name="filter" type="hidden" value="" />
+                         <input class="form-control"
+                                                                                                                                                                                  name="page"
+                                                                                                                                                                                  type="number"
+                                                                                                                                                                                  placeholder="Số trang..."
+                                                                                                                                                                                  value="" /><span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            Đi
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </li>
+    }
+   
+</ul>

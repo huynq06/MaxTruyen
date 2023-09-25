@@ -1,0 +1,110 @@
+﻿@model MaxStory.Data.Entities.Chapter
+@{
+    var urlTemplate = Url.Action() + "?chapter={0}";
+}
+@section css
+    {
+    <link href="~/content/content.css" rel="stylesheet" />
+    <link href="~/static.trumtruyen.vip/min/g/maincss-chapter-030423-2.css" rel="stylesheet" />
+}
+    @section Scripts
+    {
+    <link href="~/static.trumtruyen.vip/min/g/maincss-chapter-030423-2.css" rel="stylesheet" />
+}
+<div id="chapter-big-container" class="container chapter">
+    <div class="row">
+        <div class="col-xs-12">
+            <a class="truyen-title" href="../index.html"
+               title="Chiến Thần Thánh Y/Huyền Thoại Thánh Y">@Model.name</a>
+            <h2>
+                <a class="chapter-title" href="index.html"
+                   title="Chiến Thần Thánh Y/Huyền Thoại Thánh Y - Chương 1">
+                    <span class="chapter-text"><span>Chương </span></span>@Model.currentChapter
+                </a>
+            </h2><button type="button"
+                         class="btn btn-responsive btn-success toggle-nav-open" aria-label="Ẩn thanh menu">
+                <span class="glyphicon glyphicon-menu-updownswitch"></span>
+            </button>
+            <hr class="chapter-start"><button type="button"
+                                              class="btn btn-responsive btn-success toggle-settings-open"
+                                              aria-label="Mở ô điều chỉnh tùy chọn">
+                <span class="glyphicon glyphicon-cog"></span>
+            </button>
+            <div class="chapter-nav" id="chapter-nav-top">
+                <input type="hidden" id="ten-truyen"
+                       value="chien-than-thanh-y-huyen-thoai-thanh-y"><input type="hidden" id="truyen-comment"
+                                                                             value="chien-than-thanh-y-huyen-thoai-thanh-y"><input type="hidden" id="truyen-id"
+                                                                                                                                   value="31644"><input type="hidden" id="chapter-id" value="3564582"><input type="hidden"
+                                                                                                                                                                                                             id="chapter-bnum" value=""><input type="hidden" id="chapter-num" value="1"><input type="hidden" id="chapter-sac" value="0">
+                <div class="btn-group">
+                    @if (Model.currentChapter == "1")
+                    {
+                        <a class="btn btn-success btn-chapter-nav prev-chap disabled"
+                       href="javascript:void(0)" title="Không có chương trước" data-cid="">
+                            <span class="glyphicon glyphicon-chevron-left"></span> <span class="hidden-xs">
+                                Chương
+                            </span>trước
+                        </a>
+                    }
+                    else
+                    {
+                        <a class="btn btn-success btn-chapter-nav prev-chap" href="@urlTemplate.Replace("{0}", (int.Parse(Model.currentChapter) -1).ToString())" title="Chuong @Model.currentChapter" data-cid="3564583">
+                            <span class="glyphicon glyphicon-chevron-left"></span> <span class="hidden-xs">Chương </span>trước
+                        </a>
+                    }<button type="button"
+                                class="btn btn-success btn-chapter-nav chapter_jump"
+                                aria-label="Mở danh sách chương">
+                        <span class="glyphicon glyphicon-list-alt"></span>
+                        </button><a class="btn btn-success btn-chapter-nav next-chap" href="@urlTemplate.Replace("{0}", (int.Parse(Model.currentChapter) + 1).ToString())"
+                                title="Chương 2" data-cid="3564583">
+                        <span class="hidden-xs">Chương </span>tiếp <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+            <hr class="chapter-end">
+            <div id="chapter-c" class="chapter-c">
+             @Html.Raw(Model.content)
+            </div>
+            <hr class="chapter-end" id="chapter-end-bot">
+            <div class="chapter-nav" id="chapter-nav-bot">
+                <div class="btn-group">
+                    @if(Model.currentChapter == "1"){
+                        <a class="btn btn-success btn-chapter-nav prev-chap disabled"
+                       href="javascript:void(0)" title="Không có chương trước" data-cid="">
+                            <span class="glyphicon glyphicon-chevron-left"></span> <span class="hidden-xs">
+                                Chương
+                            </span>trước
+                        </a>
+                    }
+                  else{
+                        <a class="btn btn-success btn-chapter-nav prev-chap" href="@urlTemplate.Replace("{0}", (int.Parse(Model.currentChapter) -1).ToString())" title="Chuong @Model.currentChapter" data-cid="3564583">
+                            <span class="glyphicon glyphicon-chevron-left"></span> <span class="hidden-xs">Chương </span>trước</a>
+                  }
+                    <button type="button"
+                                class="btn btn-success btn-chapter-nav chapter_jump"
+                                aria-label="Mở danh sách chương">
+                        <span class="glyphicon glyphicon-list-alt"></span>
+                    </button>
+                    <a class="btn btn-success btn-chapter-nav next-chap" href="@urlTemplate.Replace("{0}", (int.Parse(Model.currentChapter) + 1).ToString())"
+                       title="Chương 2" data-cid="3564583">
+                        <span class="hidden-xs">Chương </span>tiếp <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-secondary"
+                            id="chapter_error">
+                        <span class="glyphicon glyphicon-flag"></span> Báo lỗi
+                        chương
+                    </button><button type="button" class="btn btn-secondary"
+                                     id="chapter_comment">
+                        <span class="glyphicon glyphicon-comment"></span> Bình
+                        luận
+                    </button>
+                </div>
+                <div class="col-xs-12">
+                    <div class="row" id="fb-comment-chapter"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

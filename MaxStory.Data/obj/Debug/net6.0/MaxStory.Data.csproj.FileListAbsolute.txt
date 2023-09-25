@@ -1,0 +1,12 @@
+E:\.NET CORE\MaxStory\MaxStory.Data\bin\Debug\net6.0\MaxStory.Data.deps.json
+E:\.NET CORE\MaxStory\MaxStory.Data\bin\Debug\net6.0\MaxStory.Data.dll
+E:\.NET CORE\MaxStory\MaxStory.Data\bin\Debug\net6.0\MaxStory.Data.pdb
+E:\.NET CORE\MaxStory\MaxStory.Data\obj\Debug\net6.0\MaxStory.Data.csproj.AssemblyReference.cache
+E:\.NET CORE\MaxStory\MaxStory.Data\obj\Debug\net6.0\MaxStory.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\.NET CORE\MaxStory\MaxStory.Data\obj\Debug\net6.0\MaxStory.Data.AssemblyInfoInputs.cache
+E:\.NET CORE\MaxStory\MaxStory.Data\obj\Debug\net6.0\MaxStory.Data.AssemblyInfo.cs
+E:\.NET CORE\MaxStory\MaxStory.Data\obj\Debug\net6.0\MaxStory.Data.csproj.CoreCompileInputs.cache
+E:\.NET CORE\MaxStory\MaxStory.Data\obj\Debug\net6.0\MaxStory.Data.dll
+E:\.NET CORE\MaxStory\MaxStory.Data\obj\Debug\net6.0\refint\MaxStory.Data.dll
+E:\.NET CORE\MaxStory\MaxStory.Data\obj\Debug\net6.0\MaxStory.Data.pdb
+E:\.NET CORE\MaxStory\MaxStory.Data\obj\Debug\net6.0\ref\MaxStory.Data.dll

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\static.trumtruyen.vip\t\**" />
+    <Content Remove="wwwroot\static.trumtruyen.vip\t\**" />
+    <EmbeddedResource Remove="wwwroot\static.trumtruyen.vip\t\**" />
+    <None Remove="wwwroot\static.trumtruyen.vip\t\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.52" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MaxStory.Application\MaxStory.Application.csproj" />
+    <ProjectReference Include="..\MaxStory.Data\MaxStory.Data.csproj" />
+    <ProjectReference Include="..\MaxStory.Utilities\MaxStory.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>

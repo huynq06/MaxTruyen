@@ -1,0 +1,14 @@
+E:\.NET CORE\MaxStory\MaxStory\obj\Release\net6.0\PubTmp\Out\MaxStory.exe
+E:\.NET CORE\MaxStory\MaxStory\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+E:\.NET CORE\MaxStory\MaxStory\obj\Release\net6.0\PubTmp\Out\appsettings.json
+E:\.NET CORE\MaxStory\MaxStory\obj\Release\net6.0\PubTmp\Out\MaxStory.dll
+E:\.NET CORE\MaxStory\MaxStory\obj\Release\net6.0\PubTmp\Out\MaxStory.deps.json
+E:\.NET CORE\MaxStory\MaxStory\obj\Release\net6.0\PubTmp\Out\MaxStory.runtimeconfig.json
+E:\.NET CORE\MaxStory\MaxStory\obj\Release\net6.0\PubTmp\Out\MaxStory.pdb
+E:\.NET CORE\MaxStory\MaxStory\obj\Release\net6.0\PubTmp\Out\HtmlAgilityPack.dll
+E:\.NET CORE\MaxStory\MaxStory\obj\Release\net6.0\PubTmp\Out\MaxStory.Application.dll
+E:\.NET CORE\MaxStory\MaxStory\obj\Release\net6.0\PubTmp\Out\MaxStory.Data.dll
+E:\.NET CORE\MaxStory\MaxStory\obj\Release\net6.0\PubTmp\Out\MaxStory.Utilities.dll
+E:\.NET CORE\MaxStory\MaxStory\obj\Release\net6.0\PubTmp\Out\MaxStory.Application.pdb
+E:\.NET CORE\MaxStory\MaxStory\obj\Release\net6.0\PubTmp\Out\MaxStory.Data.pdb
+E:\.NET CORE\MaxStory\MaxStory\obj\Release\net6.0\PubTmp\Out\MaxStory.Utilities.pdb

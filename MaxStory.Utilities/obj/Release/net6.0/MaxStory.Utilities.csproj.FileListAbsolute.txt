@@ -1,0 +1,12 @@
+E:\.NET CORE\MaxStory\MaxStory.Utilities\bin\Release\net6.0\MaxStory.Utilities.deps.json
+E:\.NET CORE\MaxStory\MaxStory.Utilities\bin\Release\net6.0\MaxStory.Utilities.dll
+E:\.NET CORE\MaxStory\MaxStory.Utilities\bin\Release\net6.0\MaxStory.Utilities.pdb
+E:\.NET CORE\MaxStory\MaxStory.Utilities\obj\Release\net6.0\MaxStory.Utilities.csproj.AssemblyReference.cache
+E:\.NET CORE\MaxStory\MaxStory.Utilities\obj\Release\net6.0\MaxStory.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+E:\.NET CORE\MaxStory\MaxStory.Utilities\obj\Release\net6.0\MaxStory.Utilities.AssemblyInfoInputs.cache
+E:\.NET CORE\MaxStory\MaxStory.Utilities\obj\Release\net6.0\MaxStory.Utilities.AssemblyInfo.cs
+E:\.NET CORE\MaxStory\MaxStory.Utilities\obj\Release\net6.0\MaxStory.Utilities.csproj.CoreCompileInputs.cache
+E:\.NET CORE\MaxStory\MaxStory.Utilities\obj\Release\net6.0\MaxStory.Utilities.dll
+E:\.NET CORE\MaxStory\MaxStory.Utilities\obj\Release\net6.0\refint\MaxStory.Utilities.dll
+E:\.NET CORE\MaxStory\MaxStory.Utilities\obj\Release\net6.0\MaxStory.Utilities.pdb
+E:\.NET CORE\MaxStory\MaxStory.Utilities\obj\Release\net6.0\ref\MaxStory.Utilities.dll

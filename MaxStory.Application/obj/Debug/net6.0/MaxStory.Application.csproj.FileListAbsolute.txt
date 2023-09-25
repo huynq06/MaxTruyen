@@ -1,0 +1,15 @@
+E:\.NET CORE\MaxStory\MaxStory.Application\bin\Debug\net6.0\MaxStory.Application.deps.json
+E:\.NET CORE\MaxStory\MaxStory.Application\bin\Debug\net6.0\MaxStory.Application.dll
+E:\.NET CORE\MaxStory\MaxStory.Application\bin\Debug\net6.0\MaxStory.Application.pdb
+E:\.NET CORE\MaxStory\MaxStory.Application\bin\Debug\net6.0\MaxStory.Data.dll
+E:\.NET CORE\MaxStory\MaxStory.Application\bin\Debug\net6.0\MaxStory.Data.pdb
+E:\.NET CORE\MaxStory\MaxStory.Application\obj\Debug\net6.0\MaxStory.Application.csproj.AssemblyReference.cache
+E:\.NET CORE\MaxStory\MaxStory.Application\obj\Debug\net6.0\MaxStory.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\.NET CORE\MaxStory\MaxStory.Application\obj\Debug\net6.0\MaxStory.Application.AssemblyInfoInputs.cache
+E:\.NET CORE\MaxStory\MaxStory.Application\obj\Debug\net6.0\MaxStory.Application.AssemblyInfo.cs
+E:\.NET CORE\MaxStory\MaxStory.Application\obj\Debug\net6.0\MaxStory.Application.csproj.CoreCompileInputs.cache
+E:\.NET CORE\MaxStory\MaxStory.Application\obj\Debug\net6.0\MaxStory.Application.csproj.CopyComplete
+E:\.NET CORE\MaxStory\MaxStory.Application\obj\Debug\net6.0\MaxStory.Application.dll
+E:\.NET CORE\MaxStory\MaxStory.Application\obj\Debug\net6.0\refint\MaxStory.Application.dll
+E:\.NET CORE\MaxStory\MaxStory.Application\obj\Debug\net6.0\MaxStory.Application.pdb
+E:\.NET CORE\MaxStory\MaxStory.Application\obj\Debug\net6.0\ref\MaxStory.Application.dll
